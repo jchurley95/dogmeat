@@ -14,7 +14,8 @@ const DiceInPlay = (props) => {
                             key={index}
                             dieId={index}
                             die={die}
-                            removeDieFromDiceInPlay={props.removeDieFromDiceInPlay}
+                            diceInPlay={props.diceInPlay}
+                            whatHappensWhenUserClicksADieInPlay={props.whatHappensWhenUserClicksADieInPlay}
                         />
                     )
                 })

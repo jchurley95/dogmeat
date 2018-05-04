@@ -16,7 +16,7 @@ const AllDice = (props) => {
             }
             <h2>Dice in play</h2>
             <DiceInPlay 
-                removeDieFromDiceInPlay={props.removeDieFromDiceInPlay}
+                whatHappensWhenUserClicksADieInPlay={props.whatHappensWhenUserClicksADieInPlay}
                 diceInPlay={props.diceInPlay}
             />
 

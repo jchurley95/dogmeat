@@ -7,7 +7,7 @@ import {
 const Die = (props) => {
     return (
         <IndividualDieContainer
-            onClick={() => {props.removeDieFromDiceInPlay(props.dieId)}}
+            onClick={() => {props.whatHappensWhenUserClicksADieInPlay(props.die, props.diceInPlay, props.dieId)}}
         >
             <DieImage 
             src={props.die.img_src}

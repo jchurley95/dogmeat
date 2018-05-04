@@ -6,7 +6,7 @@ import {
 const ScoreArea = (props) => {
     return (
         <ScoreAreaContainer>
-            
+            Score: {props.score}
         </ScoreAreaContainer>
     );
 };

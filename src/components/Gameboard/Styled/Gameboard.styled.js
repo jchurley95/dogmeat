@@ -9,10 +9,18 @@ const DiceAreaContainer = styled.div`
 `
 const ScoreAreaContainer = styled.div`
 `
+const DogmeatModalContainer = styled.div`
+    z-index: 10;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 2px 2px rgba(225,225,225,0.5);
+`
 
 export {
     GameboardContainer,
     GameboardH1,
     DiceAreaContainer,
-    ScoreAreaContainer
+    ScoreAreaContainer,
+    DogmeatModalContainer
 }
