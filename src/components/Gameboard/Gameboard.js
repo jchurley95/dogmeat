@@ -234,6 +234,7 @@ class Gameboard extends Component {
             newState.diceInPlay[index].pointValue = this.matchPointValueToDieValue(newState.diceInPlay[index].dieValue);
         })
         newState.clickedDieCannotBeRemoved = false;
+        newState.showSelectAtLeastOneDieFlag = false;
         newState.dogmeat = this.checkForDogmeat(newState.diceInPlay);
         this.setState(newState);
     }
@@ -318,7 +319,7 @@ class Gameboard extends Component {
                 <GameboardH1>Dogmeat</GameboardH1>
                 <ScoreArea score={this.state.pointsThisTurn}/>
                 <button onClick={this.whatHappensWhenUserClicksRollTheDiceButton}>Roll the dice</button>
-                <AllDice 
+                <AllDice
                     dice={this.state.dice}
                     diceInPlay={this.state.diceInPlay}
                     diceNotInPlay={this.state.diceNotInPlay}
